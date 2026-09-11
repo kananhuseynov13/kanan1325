@@ -19,3 +19,8 @@ Update projects-data.json and the corresponding static HTML page and homepage ca
 
 ## Validation
 Static links, fragments, labels, heading counts and privacy exclusions checked across all 12 HTML pages. EN/RU/AZ interface and FAQ copy, language fallback, blocked local storage, menu state and Unicode WhatsApp encoding checked. Browser interaction checks should be recorded after publication.
+
+## Area price section
+All 11 requested Dubai communities are selectable. The calculator uses visitor-entered price and size. No market values were fabricated or sourced from commercial portals.
+
+market-data.json is explicitly unavailable: no official feed has been connected. DLD’s public transaction search displayed a reCAPTCHA requirement; Dubai Pulse dataset pages timed out. The UI must not be called live until an approved official feed is integrated. Displayed snapshots must contain verified community coverage, residential sale filters, separate property/registration types, at least 10 qualifying records, median AED/sq-ft, the period and extraction date. Market community names must not be automatically equated to broader cadastral areas.

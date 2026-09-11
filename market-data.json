@@ -1,0 +1,55 @@
+{
+  "status": "unavailable",
+  "source_url": "https://dubailand.gov.ae/en/open-data/real-estate-data/",
+  "source_name": "Dubai Land Department",
+  "updated_at": null,
+  "period_start": null,
+  "period_end": null,
+  "method": "Median registered sale price per sq ft; residential apartments and villas separated; ready and off-plan separated.",
+  "areas": [
+    {
+      "name": "Dubai Marina",
+      "segments": []
+    },
+    {
+      "name": "Jumeirah Village Circle (JVC)",
+      "segments": []
+    },
+    {
+      "name": "Jumeirah Village Triangle (JVT)",
+      "segments": []
+    },
+    {
+      "name": "Dubai Hills Estate",
+      "segments": []
+    },
+    {
+      "name": "Dubai Creek Harbour",
+      "segments": []
+    },
+    {
+      "name": "Downtown Dubai",
+      "segments": []
+    },
+    {
+      "name": "Business Bay",
+      "segments": []
+    },
+    {
+      "name": "Sobha Hartland",
+      "segments": []
+    },
+    {
+      "name": "Dubai South",
+      "segments": []
+    },
+    {
+      "name": "Palm Jumeirah",
+      "segments": []
+    },
+    {
+      "name": "Dubai Islands",
+      "segments": []
+    }
+  ]
+}
