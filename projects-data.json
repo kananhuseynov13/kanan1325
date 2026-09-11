@@ -1,0 +1,372 @@
+[
+  {
+    "slug": "sobha-estates-v107",
+    "name": "Sobha Estates · Villa SE-V107",
+    "location": "Sobha Hartland II, Dubai",
+    "kind": "Villa",
+    "beds": "6",
+    "description": "A six-bedroom Type A, Variant 1 villa with basement, ground, first and second floors and an accessible roof terrace.",
+    "price": "AED 60,639,950 · supplied quotation",
+    "plan": "20% booking · 10% at 3 months · 10% at 5 months · 20% at 7 months · 40% on completion",
+    "date": "Please enquire",
+    "features": [
+      "17,326 sq ft saleable area (1,609.63 sq m)",
+      "Four enclosed parking spaces",
+      "Home theatre, games room and lift",
+      "Sunken courtyard, staff rooms and laundry"
+    ],
+    "source": "SE-V-107 (1).pdf · unit plans pp.10–14; quotation p.15",
+    "gallery": [
+      {
+        "src": "assets/sobha-exterior.webp",
+        "label": "Villa exterior renderings",
+        "page": 5
+      },
+      {
+        "src": "assets/sobha-basement.webp",
+        "label": "Basement · SE-V107",
+        "page": 10
+      },
+      {
+        "src": "assets/sobha-ground.webp",
+        "label": "Ground floor · SE-V107",
+        "page": 11
+      },
+      {
+        "src": "assets/sobha-first.webp",
+        "label": "First floor · SE-V107",
+        "page": 12
+      },
+      {
+        "src": "assets/sobha-second.webp",
+        "label": "Second floor · SE-V107",
+        "page": 13
+      },
+      {
+        "src": "assets/sobha-roof.webp",
+        "label": "Roof · SE-V107",
+        "page": 14
+      }
+    ],
+    "extra": "<p>Quoted pre-registration charges: AED 2,426,748, comprising 4% registration (AED 2,425,598), knowledge fee (AED 40) and Oqood fee (AED 1,110). Confirm the full transaction costs and current availability.</p>",
+    "amount": 60639950
+  },
+  {
+    "slug": "baccarat-saadiyat",
+    "name": "Baccarat Residences Saadiyat",
+    "location": "Saadiyat Island, Abu Dhabi",
+    "kind": "Residence",
+    "beds": "2,3,4",
+    "description": "A collection of 77 homes in Saadiyat Cultural District, with architecture by Sou Fujimoto and interiors by Studio PCH.",
+    "price": "Please enquire",
+    "plan": "Please enquire",
+    "date": "Q3 2029 · stated in supplied overview",
+    "features": [
+      "Two- and three-bedroom residences",
+      "Four-bedroom sky villas and two signature penthouses",
+      "Spa, fitness spaces and infinity pool",
+      "Screening room, resident dining and children’s club"
+    ],
+    "source": "Baccarat_Residences_Saadiyat_Brochure_Small.pdf · independent overview dated 10 September 2026; not an official Aldar brochure",
+    "gallery": [
+      {
+        "src": "assets/baccarat-cover.webp",
+        "label": "Project rendering · supplied independent overview",
+        "page": 1
+      },
+      {
+        "src": "assets/baccarat-wellness.webp",
+        "label": "Wellness overview",
+        "page": 8
+      }
+    ],
+    "extra": "<p>The supplied overview gives a broad home-size range of 2,015–25,084 sq ft. Confirm the exact residence, floor plan, view, service charges and developer specifications before selecting a home.</p>",
+    "amount": 0
+  },
+  {
+    "slug": "park-gate-residences",
+    "name": "Park Gate Residences",
+    "location": "Wasl1 / Zabeel Park, Dubai",
+    "kind": "Apartment",
+    "beds": "1,2,3",
+    "description": "Four residential towers overlooking Zabeel Park, within the Wasl1 freehold master development. The supplied brochure includes Tower A and B floor plans.",
+    "price": "Please enquire",
+    "plan": "Please enquire",
+    "date": "Current completion status to confirm",
+    "features": [
+      "One-, two- and three-bedroom apartments",
+      "Podium townhouses and penthouses also described",
+      "Pedestrian access to the metro",
+      "Landscaped podium, swimming pool and fitness facilities"
+    ],
+    "source": "wasl1pgrbrochurefloorplanstowerab.pdf · overview pp.2–17; Tower A/B plans pp.33–87",
+    "gallery": [
+      {
+        "src": "assets/wasl-exterior.webp",
+        "label": "Park Gate Residences rendering",
+        "page": 9
+      },
+      {
+        "src": "assets/wasl-plan45.webp",
+        "label": "Tower A · brochure plan p.45",
+        "page": 45
+      },
+      {
+        "src": "assets/wasl-plan51.webp",
+        "label": "Tower A · brochure plan p.51",
+        "page": 51
+      },
+      {
+        "src": "assets/wasl-plan74.webp",
+        "label": "Tower B · brochure plan p.74",
+        "page": 74
+      }
+    ],
+    "extra": "",
+    "amount": 0
+  },
+  {
+    "slug": "the-archive-imtiaz",
+    "name": "The Archive by Imtiaz",
+    "location": "Dubailand, Dubai",
+    "kind": "Apartment",
+    "beds": "0,1,2",
+    "description": "Studios, one- and two-bedroom homes listed with community, park and amenity views. Browse the ten units from the supplied price sheet below.",
+    "price": "See supplied unit schedule",
+    "plan": "50/50 · detailed milestones to confirm",
+    "date": "Q3 2028 · supplied target",
+    "features": [
+      "Five studio entries",
+      "Three one-bedroom entries",
+      "Two two-bedroom entries",
+      "Unit-specific views shown in the schedule"
+    ],
+    "source": "PHOTO-2026-09-11-13-32-06.jpg · undated price sheet",
+    "gallery": [
+      {
+        "src": "assets/archive-sheet.webp",
+        "label": "Original unit price sheet",
+        "page": 1
+      }
+    ],
+    "extra": "<p>Location corroborated by <a href=\"https://imtiaz.ae/event/first-chapter-of-the-archive-by-imtiaz\">Imtiaz’s launch information</a>. The sheet does not label the currency or area units; please confirm those before comparing prices or sizes.</p><div class=\"table-scroll\"><table><caption>Supplied unit schedule · values reproduced as listed; availability to confirm</caption><thead><tr><th scope=\"col\">Unit</th><th scope=\"col\">Type</th><th scope=\"col\">Suite area</th><th scope=\"col\">Balcony area</th><th scope=\"col\">Total area</th><th scope=\"col\">Listed price</th><th scope=\"col\">View</th></tr></thead><tbody><tr><td>118</td><td>Studio</td><td>312.69</td><td>167.59</td><td>480.29</td><td>677209</td><td>Community</td></tr><tr><td>116</td><td>Studio</td><td>317.64</td><td>166.41</td><td>484.05</td><td>677670</td><td>Community</td></tr><tr><td>216</td><td>Studio</td><td>317.64</td><td>64.48</td><td>382.12</td><td>680174</td><td>Community</td></tr><tr><td>516</td><td>Studio</td><td>317.54</td><td>64.69</td><td>382.23</td><td>695659</td><td>Community</td></tr><tr><td>921</td><td>Studio</td><td>317.54</td><td>64.69</td><td>382.23</td><td>722415</td><td>Community</td></tr><tr><td>114</td><td>1 bedroom</td><td>614.73</td><td>1039.79</td><td>1654.52</td><td>1141619</td><td>Community</td></tr><tr><td>302</td><td>1 bedroom</td><td>657.89</td><td>313.66</td><td>971.55</td><td>1168775</td><td>Community</td></tr><tr><td>1218</td><td>1 bedroom</td><td>614.73</td><td>465.54</td><td>1080.27</td><td>1193699</td><td>Community</td></tr><tr><td>120</td><td>2 bedrooms</td><td>874.57</td><td>825.16</td><td>1699.73</td><td>1611218</td><td>Park</td></tr><tr><td>121</td><td>2 bedrooms</td><td>881.13</td><td>526.03</td><td>1407.17</td><td>1625785</td><td>Park &amp; amenities</td></tr></tbody></table></div>",
+    "amount": 0
+  },
+  {
+    "slug": "selvara-3",
+    "name": "Selvara 3",
+    "location": "Grand Polo Club & Resort, Dubai",
+    "kind": "Villa",
+    "beds": "4",
+    "description": "Four-bedroom villas by Emaar, set within an equestrian community with polo fields, stables and landscaped communal spaces.",
+    "price": "Please enquire",
+    "plan": "Please enquire",
+    "date": "Please enquire",
+    "features": [
+      "Four-bedroom villas",
+      "Pool terrace, gymnasium and yoga pavilion",
+      "Clubhouse and curated retail promenade",
+      "Neighbourhood parks and playgrounds"
+    ],
+    "source": "SELVARA3_GP_BROCHURE.pdf · villa description p.15; community amenities p.11",
+    "gallery": [
+      {
+        "src": "assets/selvara-exterior.webp",
+        "label": "Selvara 3 exterior rendering",
+        "page": 10
+      },
+      {
+        "src": "assets/selvara-interior.webp",
+        "label": "Interior rendering",
+        "page": 16
+      },
+      {
+        "src": "assets/selvara-map.webp",
+        "label": "Community masterplan",
+        "page": 9
+      }
+    ],
+    "extra": "<p>Unit sizes, floor plans, prices, payment terms and handover dates are not stated in the supplied brochure. Request a current unit selection.</p>",
+    "amount": 0
+  },
+  {
+    "slug": "d-villas",
+    "name": "D-Villas",
+    "location": "Jumeirah Golf Estates, Dubai",
+    "kind": "Villa",
+    "beds": "4,5",
+    "description": "Four- and five-bedroom villas by DarGlobal, with private gardens in the established golf community of Jumeirah Golf Estates.",
+    "price": "Please enquire",
+    "plan": "Please enquire",
+    "date": "Please enquire",
+    "features": [
+      "Four- and five-bedroom layouts",
+      "Selected four-bedroom layouts include a lift",
+      "Community clubhouse and landscaped spaces",
+      "Earth and Fire golf courses nearby; access terms to confirm"
+    ],
+    "source": "DG_D-Villas_JGE_Brochure_EN_compressed.pdf · plans pp.40–49",
+    "gallery": [
+      {
+        "src": "assets/dvillas-exterior.webp",
+        "label": "Community exterior rendering",
+        "page": 23
+      },
+      {
+        "src": "assets/dvillas-interior.webp",
+        "label": "Interior rendering",
+        "page": 25
+      },
+      {
+        "src": "assets/dvillas-plan4.webp",
+        "label": "V26 left · 4 bedrooms with lift",
+        "page": 40
+      },
+      {
+        "src": "assets/dvillas-plan4b.webp",
+        "label": "4-bedroom layout · brochure p.44",
+        "page": 44
+      },
+      {
+        "src": "assets/dvillas-plan5.webp",
+        "label": "5-bedroom layout · brochure p.48",
+        "page": 48
+      }
+    ],
+    "extra": "<p>Example V26 left layout: plot 2,287 sq ft / 212 sq m; built-up area 3,181 sq ft / 295 sq m, as printed in the brochure. Other layouts differ. Brochure images and amenity descriptions are indicative; confirm inclusions and access privileges in the contract.</p>",
+    "amount": 0
+  },
+  {
+    "slug": "trump-tower-dubai",
+    "name": "Trump International Hotel & Tower Dubai",
+    "location": "Dubai",
+    "kind": "Residence",
+    "beds": "unknown",
+    "description": "A DarGlobal project supplied with a construction-linked payment schedule. Request the full project brochure and available residences for unit selection.",
+    "price": "Please enquire",
+    "plan": "20% immediate · 70% across construction milestones · 10% completion",
+    "date": "December 2031 · supplied target",
+    "features": [
+      "20% down payment",
+      "10% on completion of enabling work",
+      "10% each at ground, 10th, 20th, 40th and 60th floors",
+      "10% superstructure; final 10% project completion"
+    ],
+    "source": "DGxTrump Dubai_Payment Plan_EN.pdf · payment schedule p.1",
+    "gallery": [
+      {
+        "src": "assets/trump-exterior.webp",
+        "label": "Project rendering from payment sheet",
+        "page": 1
+      }
+    ],
+    "extra": "<p>DarGlobal is the owner and developer; the Trump name is used under licence. The supplied sheet contains no unit prices, sizes or floor plans. Milestones and target completion require reconfirmation.</p>",
+    "amount": 0
+  },
+  {
+    "slug": "riverside-retail-r207",
+    "name": "360 Riverside Crescent · Retail R207",
+    "location": "Sobha Hartland II, Dubai",
+    "kind": "Retail",
+    "beds": "retail",
+    "description": "Retail unit 360 RSC-R207 on podium level 2 at 360 Riverside Crescent.",
+    "price": "AED 9,621,900 excluding VAT · quotation",
+    "plan": "20% booking · 10% at 4 months · 10% at 8 months · 10% at 10 months · 50% completion",
+    "date": "Please enquire",
+    "features": [
+      "962 sq ft saleable area",
+      "Podium level 2",
+      "Retail use; permitted activity to confirm",
+      "Freehold project 360 Riverside Crescent"
+    ],
+    "source": "Retail Sobha Hartland 2 R207.pdf · quotation SH-1250922, p.6",
+    "gallery": [
+      {
+        "src": "assets/retail-exterior.webp",
+        "label": "360 Riverside Crescent project overview",
+        "page": 4
+      },
+      {
+        "src": "assets/retail-view.webp",
+        "label": "Project rendering",
+        "page": 5
+      }
+    ],
+    "extra": "<p>Quoted pre-registration fees: AED 386,026 (AED 384,876 registration, AED 40 knowledge fee and AED 1,110 Oqood). VAT is excluded from the quoted price. Request the unit floor plan, permitted business activity, fit-out requirements, service charges and current availability.</p>",
+    "amount": 9621900
+  },
+  {
+    "slug": "davinci-tower",
+    "name": "DaVinci Tower · Interiors by Pagani",
+    "location": "Business Bay, Dubai",
+    "kind": "Apartment",
+    "beds": "1,2,3,4",
+    "description": "Design-led residences at J One Tower B by Dubai Canal, with interiors by Pagani and private outdoor spaces.",
+    "price": "Please enquire",
+    "plan": "Unit-specific terms on request",
+    "date": "Current completion status to confirm",
+    "features": [
+      "Main collection of two- to four-bedroom homes",
+      "Brochure also includes a one-bedroom floor plan",
+      "Canal and Downtown outlooks vary by unit",
+      "Marble finishes and home automation described"
+    ],
+    "source": "DGxPagani_DaVinci Tower_Brochure_EN (7).pdf · location pp.9–12, residences p.16, plans pp.30–63",
+    "gallery": [
+      {
+        "src": "assets/davinci-exterior.webp",
+        "label": "DaVinci Tower rendering",
+        "page": 7
+      },
+      {
+        "src": "assets/davinci-interior.webp",
+        "label": "Interior rendering",
+        "page": 17
+      },
+      {
+        "src": "assets/davinci-duplex.webp",
+        "label": "4-bedroom duplex · floors 1 and 2",
+        "page": 34
+      },
+      {
+        "src": "assets/davinci-plan2.webp",
+        "label": "2-bedroom · floor 2, 01 series",
+        "page": 37
+      }
+    ],
+    "extra": "<p><a class=\"btn primary\" href=\"davinci-201b.html\">View apartment DVT-2-201 B and its historical offer</a></p>",
+    "amount": 0
+  },
+  {
+    "slug": "davinci-201b",
+    "name": "DaVinci · Apartment DVT-2-201 B",
+    "location": "Business Bay, Dubai",
+    "kind": "Apartment",
+    "beds": "2",
+    "description": "A two-bedroom apartment with a neighbourhood view. This page records a previously issued unit offer, linked to the DaVinci Tower project.",
+    "price": "AED 6,961,099 · expired offer",
+    "plan": "Historical: four instalments of 25%",
+    "date": "31 December 2025 in old offer · current status unverified",
+    "features": [
+      "2,006.50 sq ft saleable area",
+      "Two bedrooms",
+      "Neighbourhood view",
+      "Unit DVT-2-201 B"
+    ],
+    "source": "SO_DVT-2-201 B_a0SNM000002h1kT2AQapplication_pdf.pdf · unit details p.4, plan p.5, payment p.6",
+    "gallery": [
+      {
+        "src": "assets/davinci-unit-cover.webp",
+        "label": "Project rendering",
+        "page": 1
+      },
+      {
+        "src": "assets/davinci-unit-plan.webp",
+        "label": "Exact unit plan · DVT-2-201 B",
+        "page": 5
+      }
+    ],
+    "extra": "<p><strong>This offer has expired.</strong> It was valid for one business day. Its schedule lists 25% (AED 1,740,274.75) on each of 29 October 2025, 1 June 2026, 1 June 2027 and 1 June 2028. These are historical terms, not a current payment instruction or availability confirmation.</p><p><a href=\"davinci-tower.html\">Explore the DaVinci Tower project →</a></p>",
+    "amount": 6961099
+  }
+]
