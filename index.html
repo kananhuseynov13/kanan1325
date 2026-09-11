@@ -5,36 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bridge Properties | Luxury Dubai Real Estate Brokerage</title>
   <meta name="description" content="Bridge Properties is a premium Dubai real estate brokerage for luxury villas, waterfront residences, off-plan launches and investment properties." />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=202609-refresh" />
 </head>
 <body>
+  <a data-i18n="skip" class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Bridge Properties Home">
-      <img src="logo.png" alt="Bridge Properties logo" />
+      <img src="logo-navy.webp" width="600" height="400" alt="Bridge Properties logo" />
     </a>
-    <nav class="nav">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span data-i18n="menu" >Menu</span></button>
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
       <a href="#projects" data-i18n="navProjects">Projects</a>
       <a href="#services" data-i18n="navServices">Services</a>
       <a href="#about" data-i18n="navAbout">About</a>
       <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
-    <div class="lang-switch">
-      <button data-lang="en">EN</button>
-      <button data-lang="ru">RU</button>
-      <button data-lang="az">AZ</button>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" lang="en" aria-label="English" data-lang="en">EN</button>
+      <button type="button" lang="ru" aria-label="Русский" data-lang="ru">RU</button>
+      <button type="button" lang="az" aria-label="Azərbaycan dili" data-lang="az">AZ</button>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="eyebrow" data-i18n="heroEyebrow">Dubai Luxury Real Estate Brokerage</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">Dubai real estate, personally advised</p>
         <h1 data-i18n="heroTitle">Discover exceptional properties in Dubai</h1>
-        <p data-i18n="heroText">Bridge Properties connects clients with premium residences, off-plan opportunities and investment-grade projects across Dubai’s most prestigious communities.</p>
+        <p data-i18n="heroText">Find a home or investment that fits your plans. We help you compare locations, understand the options and take the next step with confidence.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#projects" data-i18n="heroBtn1">View Featured Projects</a>
-          <a class="btn ghost" href="https://wa.me/971561422113" target="_blank" rel="noopener" data-i18n="heroBtn2">WhatsApp Advisor</a>
+          <a class="btn primary" href="#projects" data-i18n="heroBtn1">Explore projects</a>
+          <a class="btn ghost" href="https://wa.me/971561422113" target="_blank" rel="noopener" data-i18n="heroBtn2">Talk to an advisor</a>
         </div>
       </div>
     </section>
@@ -43,36 +45,36 @@
       <div><strong>Dubai</strong><span data-i18n="stat1">Prime Market Focus</span></div>
       <div><strong>Off-plan</strong><span data-i18n="stat2">Developer Launches</span></div>
       <div><strong>Luxury</strong><span data-i18n="stat3">Villas & Residences</span></div>
-      <div><strong>Investment</strong><span data-i18n="stat4">ROI-focused Advisory</span></div>
+      <div><strong>Investment</strong><span data-i18n="stat4">Considered property decisions</span></div>
     </section>
 
     <section id="projects" class="section-pad projects-section">
       <div class="section-head">
         <p class="eyebrow" data-i18n="featuredEyebrow">Featured Projects</p>
         <h2 data-i18n="featuredTitle">Curated Dubai opportunities</h2>
-        <p data-i18n="featuredText">Each project page is designed to showcase gallery, location, prices, payment plan, amenities and lead capture. New brochures can be added as separate project pages.</p>
+        <p data-i18n="featuredText">Explore our featured project, then ask us for the latest availability, floor plans and payment options.</p>
       </div>
       <div class="project-grid">
         <article class="project-card large">
-          <div class="project-image cedarwood"></div>
+          <div class="project-image cedarwood" role="img" aria-label="Contemporary villa lifestyle"></div><p data-i18n="imageNote" class="image-note">Lifestyle image · not a project rendering</p>
           <div class="project-body">
             <p class="tag">Jumeirah Golf Estates</p>
             <h3>Cedarwood Estates South</h3>
             <p data-i18n="cedarDesc">A limited collection of golf villas surrounded by greenery, fairways and resort-style privileges.</p>
             <div class="project-meta">
-              <span>4–6 BR Villas</span>
-              <span>From AED 13.35M</span>
-              <span>50/50 Plan</span>
+              <span data-i18n="bedRange" >4–6 bedroom villas</span>
+              <span data-i18n="priceRequest" >Ask for current prices</span>
+              <span data-i18n="planRequest" >Payment options on request</span>
             </div>
             <a class="text-link" href="cedarwood-estates.html" data-i18n="viewProject">View project →</a>
           </div>
         </article>
-        <article class="project-card placeholder">
-          <div class="project-image future"></div>
+        <article class="project-card shortlist-card">
+
           <div class="project-body">
-            <p class="tag" data-i18n="comingSoon">Coming Soon</p>
-            <h3 data-i18n="futureTitle">Next Developer Launch</h3>
-            <p data-i18n="futureDesc">Upload a new brochure and this card becomes a full project page with all details.</p>
+            <p class="tag" data-i18n="comingSoon">A personal shortlist</p>
+            <h3 data-i18n="futureTitle">Looking for something different?</h3>
+            <p data-i18n="futureDesc">Tell us your preferred area, budget and property type. We will help you explore suitable options.</p><a data-i18n="shortlist" class="btn primary" href="#contact">Discuss my requirements</a>
           </div>
         </article>
       </div>
@@ -86,7 +88,7 @@
       <div class="service-grid">
         <div class="service-card"><h3 data-i18n="s1Title">Off-plan Advisory</h3><p data-i18n="s1Text">Access to new launches, payment plans and developer opportunities.</p></div>
         <div class="service-card"><h3 data-i18n="s2Title">Luxury Sales</h3><p data-i18n="s2Text">Villas, penthouses and branded residences in Dubai’s prime locations.</p></div>
-        <div class="service-card"><h3 data-i18n="s3Title">Investment Strategy</h3><p data-i18n="s3Text">Data-led guidance for ROI, capital appreciation and exit planning.</p></div>
+        <div class="service-card"><h3 data-i18n="s3Title">Investment Strategy</h3><p data-i18n="s3Text">Compare purchase costs, rental potential and resale considerations before deciding.</p></div>
         <div class="service-card"><h3 data-i18n="s4Title">Buyer Representation</h3><p data-i18n="s4Text">A structured search, negotiation and closing process for serious buyers.</p></div>
       </div>
     </section>
@@ -94,39 +96,39 @@
     <section id="about" class="section-pad about">
       <div class="about-panel">
         <p class="eyebrow" data-i18n="aboutEyebrow">Bridge Properties</p>
-        <h2 data-i18n="aboutTitle">A modern brokerage for Dubai’s next generation of investors</h2>
-        <p data-i18n="aboutText">We combine premium presentation with practical market knowledge, helping clients select properties based on lifestyle, long-term value and investment objectives.</p>
+        <h2 data-i18n="aboutTitle">Your plans. Our personal attention.</h2>
+        <p data-i18n="aboutText">Buying a home is personal. We take time to understand your priorities, explain your options clearly and support you from the first conversation through the purchase.</p>
       </div>
     </section>
 
     <section id="contact" class="section-pad lead-section">
       <div class="lead-copy">
-        <p class="eyebrow" data-i18n="leadEyebrow">Lead Capture</p>
-        <h2 data-i18n="leadTitle">Request private consultation</h2>
-        <p data-i18n="leadText">Tell us what you are looking for and a Bridge Properties advisor will contact you by WhatsApp.</p>
+        <p class="eyebrow" data-i18n="leadEyebrow">Let’s talk</p>
+        <h2 data-i18n="leadTitle">Tell us what you’re looking for</h2>
+        <p data-i18n="leadText">Share a few details to start a conversation with your Bridge Properties advisor.</p>
       </div>
       <form class="lead-form" onsubmit="sendLead(event)">
-        <input id="name" type="text" placeholder="Full name" required data-placeholder-en="Full name" data-placeholder-ru="Имя и фамилия" data-placeholder-az="Ad və soyad" />
-        <input id="phone" type="tel" placeholder="Phone / WhatsApp" required data-placeholder-en="Phone / WhatsApp" data-placeholder-ru="Телефон / WhatsApp" data-placeholder-az="Telefon / WhatsApp" />
-        <select id="interest">
+        <label data-i18n="nameLabel" for="name">Full name</label><input autocomplete="name" maxlength="100" name="name" data-placeholder-key="nameLabel" id="name" type="text" placeholder="Full name" required data-placeholder-en="Full name" data-placeholder-ru="Имя и фамилия" data-placeholder-az="Ad və soyad" />
+        <label data-i18n="phoneLabel" for="phone">Phone / WhatsApp</label><input autocomplete="tel" inputmode="tel" maxlength="30" aria-describedby="phone-hint" name="phone" data-placeholder-key="phoneLabel" id="phone" type="tel" placeholder="Phone / WhatsApp" required data-placeholder-en="Phone / WhatsApp" data-placeholder-ru="Телефон / WhatsApp" data-placeholder-az="Telefon / WhatsApp" />
+        <p data-i18n="phoneHint" id="phone-hint" class="field-hint">Include your country code, for example +971.</p><label data-i18n="interestLabel" for="interest">I’m interested in</label><select name="interest" id="interest">
           <option data-i18n="optBuy">Buying property</option>
           <option data-i18n="optInvest">Investment opportunity</option>
           <option data-i18n="optSell">Selling property</option>
           <option data-i18n="optProject">Specific project inquiry</option>
         </select>
-        <textarea id="message" rows="4" placeholder="Tell us your budget, preferred area and property type" data-placeholder-en="Tell us your budget, preferred area and property type" data-placeholder-ru="Укажите бюджет, район и тип недвижимости" data-placeholder-az="Büdcənizi, ərazini və əmlak növünü yazın"></textarea>
-        <button class="btn primary" type="submit" data-i18n="sendWhatsapp">Send via WhatsApp</button>
-      </form>
+        <label data-i18n="messageLabel" for="message">Your requirements (optional)</label><textarea name="message" maxlength="2000" data-placeholder-key="messageHint" id="message" rows="4" placeholder="Tell us your budget, preferred area and property type" data-placeholder-en="Tell us your budget, preferred area and property type" data-placeholder-ru="Укажите бюджет, район и тип недвижимости" data-placeholder-az="Büdcənizi, ərazini və əmlak növünü yazın"></textarea>
+        <button class="btn primary" type="submit" data-i18n="sendWhatsapp">Continue to WhatsApp</button>
+      <p data-i18n="formNote" class="field-hint form-note">Your details will open in WhatsApp. Review the message and tap Send to contact us.</p></form>
     </section>
   </main>
 
   <a class="whatsapp-float" href="https://wa.me/971561422113" target="_blank" rel="noopener" aria-label="WhatsApp Bridge Properties">WhatsApp</a>
 
   <footer class="footer">
-    <img src="logo.png" alt="Bridge Properties logo" />
-    <p>© 2026 Bridge Properties. Dubai, UAE.</p>
+    <img src="logo-navy.webp" width="600" height="400" alt="Bridge Properties logo" />
+    <p>© 2026 Bridge Properties.</p><p data-i18n="footerText" >Dubai, UAE · Personal property advice</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=202609-refresh" defer></script>
 </body>
 </html>
