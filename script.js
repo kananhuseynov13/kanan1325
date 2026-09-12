@@ -14,6 +14,299 @@ Object.assign(dict.ru,{budgetNote:'Фильтр использует цены и
 Object.assign(dict.az,{budgetNote:'Filtr cari qiymətlərə deyil, sənədlərdəki təkliflərə əsaslanır. AED ilə təsdiqlənmiş qiyməti olmayan layihələr ayrıca göstərilir.'});
 const marketCopy={"marketNav": ["Area prices", "Цены по районам", "Ərazi qiymətləri"], "marketEyebrow": ["Know your market", "Знайте свой рынок", "Bazarınızı tanıyın"], "marketTitle": ["Dubai prices, area by area", "Цены в районах Дубая", "Dubay ərazilərində qiymətlər"], "marketIntro": ["Compare registered sale prices per square foot using Dubai Land Department records. A neighbourhood benchmark is a starting point, not a valuation of a particular home.", "Сравнивайте цены зарегистрированных продаж за квадратный фут по данным DLD. Показатель района — ориентир, а не оценка конкретного объекта.", "DLD qeydləri əsasında kvadrat futa düşən satış qiymətlərini müqayisə edin. Ərazi göstəricisi istiqamət verir, konkret evin qiymətləndirilməsi deyil."], "marketArea": ["Choose your area", "Выберите район", "Ərazinizi seçin"], "marketApartment": ["Apartments", "Квартиры", "Mənzillər"], "marketVilla": ["Villas", "Виллы", "Villalar"], "marketStage": ["Registration type", "Тип регистрации", "Qeydiyyat növü"], "marketReady": ["Ready", "Готовое жильё", "Hazır əmlak"], "marketOffplan": ["Off-plan", "Строящееся жильё", "Tikilməkdə olan əmlak"], "marketUnavailable": ["Verified figures unavailable", "Подтверждённых данных пока нет", "Təsdiqlənmiş göstəricilər mövcud deyil"], "marketPending": ["A current official benchmark is not available on this site yet. Request a verified comparison for your chosen area.", "Актуальный официальный показатель пока недоступен на сайте. Запросите подтверждённое сравнение выбранного района.", "Saytda aktual rəsmi göstərici hələ yoxdur. Seçdiyiniz ərazi üçün təsdiqlənmiş müqayisə istəyin."], "marketAsk": ["Request an area comparison", "Запросить сравнение района", "Ərazi müqayisəsi istəyin"], "marketSource": ["Open official DLD records ↗", "Открыть официальные данные DLD ↗", "DLD-nin rəsmi qeydlərini açın ↗"], "marketCalcEyebrow": ["Compare a property", "Сравните объект", "Əmlakı müqayisə edin"], "marketCalcTitle": ["What is its price per sq ft?", "Какова цена за квадратный фут?", "Kvadrat futun qiyməti nə qədərdir?"], "marketCalcIntro": ["Enter a price and size from a property you are considering.", "Введите цену и площадь интересующего объекта.", "Maraqlandığınız əmlakın qiymətini və sahəsini daxil edin."], "marketPrice": ["Property price (AED)", "Цена объекта (AED)", "Əmlakın qiyməti (AED)"], "marketSize": ["Property size", "Площадь объекта", "Əmlakın sahəsi"], "marketUnit": ["Area unit", "Единица площади", "Sahə vahidi"], "marketCalculate": ["Calculate", "Рассчитать", "Hesabla"], "marketCalcNote": ["Your calculation uses the values you enter. It is not an official market price. Use comparable internal or saleable areas consistently.", "Расчёт основан на введённых вами значениях. Это не официальный рыночный показатель. Сравнивайте площади, рассчитанные одинаковым способом.", "Hesablama daxil etdiyiniz rəqəmlərə əsaslanır, rəsmi bazar qiyməti deyil. Eyni üsulla ölçülmüş sahələri müqayisə edin."], "marketMethod": ["How to read an area benchmark", "Как читать показатель района", "Ərazi göstəricisini necə anlamaq olar"], "marketMethodText": ["We will show the median price of qualifying registered sales, the date range and the number of transactions. Apartments, villas, ready and off-plan homes must be compared separately. Small samples will be marked as insufficient. Prices can vary by building, view, condition and layout.", "Будут показаны медианная цена подходящих зарегистрированных продаж, период и число сделок. Квартиры, виллы, готовые и строящиеся объекты сравниваются отдельно. Малые выборки будут отмечены как недостаточные. Цена зависит от здания, вида, состояния и планировки.", "Uyğun qeydiyyatlı satışların median qiyməti, dövrü və əməliyyat sayı göstəriləcək. Mənzillər, villalar, hazır və tikilməkdə olan evlər ayrı müqayisə edilməlidir. Kiçik nümunələr yetərsiz kimi qeyd ediləcək. Qiymət bina, mənzərə, vəziyyət və plandan asılıdır."], "marketBoundary": ["Marketing community names may differ from DLD registration areas. Each community’s coverage must be verified before figures are published.", "Название сообщества может отличаться от района регистрации DLD. Границы выборки проверяются до публикации цифр.", "İcmaların adları DLD qeydiyyat ərazilərindən fərqlənə bilər. Rəqəmlər dərc edilməzdən əvvəl əhatə dairəsi yoxlanmalıdır."]};
 Object.entries(marketCopy).forEach(([k,v])=>["en","ru","az"].forEach((l,i)=>dict[l][k]=v[i]));
+const polishCopy = {
+  "heroEyebrow": [
+    "Dubai & Abu Dhabi property",
+    "Недвижимость Дубая и Абу-Даби",
+    "Dubay və Abu-Dabi əmlakı"
+  ],
+  "heroTitle": [
+    "Your next home starts here.",
+    "Ваш новый дом начинается здесь.",
+    "Yeni evinizə ilk addım."
+  ],
+  "heroText": [
+    "Explore homes, compare your favourites and get personal guidance on prices, payment plans and the next steps.",
+    "Изучайте проекты, сравнивайте понравившиеся варианты и получайте личную консультацию по ценам, оплате и покупке.",
+    "Evləri araşdırın, bəyəndiyiniz variantları müqayisə edin, qiymətlər, ödəniş planları və növbəti addımlar barədə fərdi məsləhət alın."
+  ],
+  "stepExplore": [
+    "Explore",
+    "Найдите",
+    "Kəşf edin"
+  ],
+  "stepCompare": [
+    "Compare",
+    "Сравните",
+    "Müqayisə edin"
+  ],
+  "stepPlan": [
+    "Plan",
+    "Спланируйте",
+    "Planlaşdırın"
+  ],
+  "stepConnect": [
+    "Connect",
+    "Обсудите",
+    "Əlaqə saxlayın"
+  ],
+  "stat1": [
+    "Find a home in your preferred area",
+    "Выберите дом в нужном районе",
+    "İstədiyiniz ərazidə ev tapın"
+  ],
+  "stat2": [
+    "Shortlist up to three projects",
+    "Сравните до трёх проектов",
+    "Üçədək layihə seçin"
+  ],
+  "stat3": [
+    "Understand prices and payment options",
+    "Уточните цены и условия оплаты",
+    "Qiymətləri və ödəniş şərtlərini öyrənin"
+  ],
+  "stat4": [
+    "Speak with your property advisor",
+    "Поговорите с консультантом",
+    "Əmlak məsləhətçinizlə danışın"
+  ],
+  "featuredEyebrow": [
+    "Explore the collection",
+    "Выберите свой проект",
+    "Layihələri kəşf edin"
+  ],
+  "catalogueIntro": [
+    "Browse homes and commercial spaces in Dubai and Abu Dhabi. Filter by your priorities, or select up to three projects to compare.",
+    "Выбирайте жильё и коммерческие помещения в Дубае и Абу-Даби. Используйте фильтры или сравните до трёх проектов.",
+    "Dubay və Abu-Dabidə evlərə və kommersiya sahələrinə baxın. İstəklərinizə uyğun filtrləyin və ya üçədək layihəni müqayisə edin."
+  ],
+  "budgetNote": [
+    "Prices shown are reference quotations. Ask us to confirm today’s price and availability.",
+    "Указаны справочные цены из предложений. Уточните актуальную стоимость и наличие у консультанта.",
+    "Göstərilən qiymətlər əvvəlki təkliflərdəndir. Cari qiyməti və mövcudluğu bizdən dəqiqləşdirin."
+  ],
+  "quotedBudget": [
+    "Price range (AED)",
+    "Диапазон цен (AED)",
+    "Qiymət aralığı (AED)"
+  ],
+  "allTypes": [
+    "All types",
+    "Все типы",
+    "Bütün növlər"
+  ],
+  "typeApartment": [
+    "Apartments",
+    "Квартиры",
+    "Mənzillər"
+  ],
+  "typeVilla": [
+    "Villas",
+    "Виллы",
+    "Villalar"
+  ],
+  "typeResidence": [
+    "Branded residences",
+    "Брендированные резиденции",
+    "Brend rezidensiyalar"
+  ],
+  "typeRetail": [
+    "Retail spaces",
+    "Торговые помещения",
+    "Ticarət sahələri"
+  ],
+  "anyBeds": [
+    "Any",
+    "Любое",
+    "İstənilən"
+  ],
+  "studio": [
+    "Studio",
+    "Студия",
+    "Studiya"
+  ],
+  "allPrices": [
+    "All prices",
+    "Все цены",
+    "Bütün qiymətlər"
+  ],
+  "price10": [
+    "Up to 10 million",
+    "До 10 млн",
+    "10 milyona qədər"
+  ],
+  "price20": [
+    "Up to 20 million",
+    "До 20 млн",
+    "20 milyona qədər"
+  ],
+  "priceHigher": [
+    "Over 20 million",
+    "Более 20 млн",
+    "20 milyondan yuxarı"
+  ],
+  "priceUnknown": [
+    "Price on request",
+    "Цена по запросу",
+    "Qiymət sorğu ilə"
+  ],
+  "searchHint": [
+    "Project or area",
+    "Проект или район",
+    "Layihə və ya ərazi"
+  ],
+  "servicesEyebrow": [
+    "Here to help",
+    "Мы рядом",
+    "Sizə kömək edirik"
+  ],
+  "servicesTitle": [
+    "Support at every step",
+    "Поддержка на каждом этапе",
+    "Hər addımda dəstək"
+  ],
+  "s1Title": [
+    "Explore new developments",
+    "Выбор новостройки",
+    "Yeni layihələri araşdırın"
+  ],
+  "s1Text": [
+    "Understand the location, layouts and payment plan before choosing an off-plan home.",
+    "Разберитесь в расположении, планировках и условиях оплаты перед покупкой строящегося жилья.",
+    "Tikilməkdə olan evi seçməzdən əvvəl ərazini, planları və ödəniş şərtlərini öyrənin."
+  ],
+  "s2Title": [
+    "Find the right home",
+    "Поиск вашего дома",
+    "Uyğun evi tapın"
+  ],
+  "s2Text": [
+    "Explore villas, apartments and branded residences that suit your lifestyle and priorities.",
+    "Выбирайте виллы, квартиры и брендированные резиденции под ваш образ жизни и приоритеты.",
+    "Həyat tərzinizə və prioritetlərinizə uyğun villa, mənzil və brend rezidensiyaları araşdırın."
+  ],
+  "s3Title": [
+    "Understand the numbers",
+    "Понятные расчёты",
+    "Rəqəmləri anlayın"
+  ],
+  "s4Title": [
+    "Buy with clear guidance",
+    "Понятный процесс покупки",
+    "Aydın məsləhətlə alın"
+  ],
+  "s4Text": [
+    "Get help with your shortlist, viewings, negotiations and the steps towards completion.",
+    "Получите помощь с подбором, просмотрами, переговорами и оформлением покупки.",
+    "Seçim, baxış, danışıqlar və alışın tamamlanması mərhələlərində dəstək alın."
+  ],
+  "privacyNote": [
+    "We use the contact details you share to respond to your enquiry. You can review your WhatsApp message before sending it.",
+    "Мы используем ваши контактные данные, чтобы ответить на запрос. Перед отправкой вы сможете проверить сообщение в WhatsApp.",
+    "Paylaşdığınız əlaqə məlumatlarından sorğunuza cavab vermək üçün istifadə edirik. WhatsApp mesajını göndərməzdən əvvəl yoxlaya bilərsiniz."
+  ],
+  "requestBrochure": [
+    "Ask on WhatsApp",
+    "Написать в WhatsApp",
+    "WhatsApp-da yazın"
+  ],
+  "beforeChoose": [
+    "Confirm the latest details",
+    "Уточните актуальные условия",
+    "Aktual şərtləri dəqiqləşdirin"
+  ],
+  "sourceWarning": [
+    "Project details are taken from the provided brochures and quotations. Ask us to confirm prices, availability, payment terms and handover dates. Images and plans are illustrative.",
+    "Информация взята из предоставленных брошюр и предложений. Уточните цены, наличие, условия оплаты и сроки сдачи. Изображения и планы носят иллюстративный характер.",
+    "Məlumatlar təqdim edilmiş broşür və təkliflərdəndir. Qiymətləri, mövcudluğu, ödəniş şərtlərini və təhvil tarixlərini dəqiqləşdirin. Şəkillər və planlar nümunə xarakterlidir."
+  ],
+  "sourceDetails": [
+    "About this information",
+    "Об этой информации",
+    "Bu məlumat haqqında"
+  ],
+  "overviewNav": [
+    "Overview",
+    "Обзор",
+    "İcmal"
+  ],
+  "galleryNav": [
+    "Images & floor plans",
+    "Фото и планировки",
+    "Şəkillər və planlar"
+  ],
+  "enquireNav": [
+    "Enquire",
+    "Связаться",
+    "Sorğu göndərin"
+  ],
+  "backTop": [
+    "Back to top ↑",
+    "Наверх ↑",
+    "Yuxarı ↑"
+  ],
+  "viewShortlist": [
+    "View shortlist",
+    "Открыть сравнение",
+    "Seçimlərə baxın"
+  ],
+  "clearShortlist": [
+    "Clear",
+    "Очистить",
+    "Təmizlə"
+  ],
+  "clearSearch": [
+    "Show all projects",
+    "Показать все проекты",
+    "Bütün layihələri göstər"
+  ],
+  "closeViewer": [
+    "Close ×",
+    "Закрыть ×",
+    "Bağla ×"
+  ],
+  "downloadImage": [
+    "Save image",
+    "Сохранить изображение",
+    "Şəkli yadda saxla"
+  ],
+  "locationLabel": [
+    "Location",
+    "Расположение",
+    "Ərazi"
+  ],
+  "quotedPriceLabel": [
+    "Reference price",
+    "Справочная цена",
+    "Məlumat üçün qiymət"
+  ],
+  "paymentSourceLabel": [
+    "Payment plan in the offer",
+    "План оплаты в предложении",
+    "Təklifdəki ödəniş planı"
+  ],
+  "handoverSourceLabel": [
+    "Handover information",
+    "Информация о сдаче",
+    "Təhvil haqqında məlumat"
+  ],
+  "marketIntro": [
+    "Explore Dubai’s main communities and calculate a property’s price per square foot. Official area benchmarks will appear here when verified data is available.",
+    "Изучайте основные районы Дубая и рассчитывайте цену недвижимости за квадратный фут. Показатели по районам появятся после получения проверенных официальных данных.",
+    "Dubayın əsas ərazilərini araşdırın və əmlakın kvadrat fut qiymətini hesablayın. Təsdiqlənmiş rəsmi məlumat olduqda ərazi göstəriciləri burada görünəcək."
+  ],
+  "marketStage": [
+    "Property status",
+    "Статус недвижимости",
+    "Əmlakın statusu"
+  ],
+  "marketPending": [
+    "We’re waiting for verified official figures. In the meantime, ask an advisor about your chosen area or open DLD’s records.",
+    "Мы ожидаем проверенные официальные данные. Пока вы можете обсудить выбранный район с консультантом или открыть данные DLD.",
+    "Təsdiqlənmiş rəsmi rəqəmləri gözləyirik. Bu müddətdə seçdiyiniz ərazini məsləhətçi ilə müzakirə edin və ya DLD məlumatlarına baxın."
+  ]
+};
+Object.entries(polishCopy).forEach(([key, values]) => ["en", "ru", "az"].forEach((lang, i) => dict[lang][key] = values[i]));
 let currentLang = 'en';
 function setLang(requested) {
  const lang = Object.hasOwn(dict, requested) ? requested : 'en';
