@@ -27,7 +27,7 @@ function comparison(){
  cards.forEach(card=>card.classList.toggle('is-selected',selected.has(card.querySelector('.compare-check').value)));
  try{sessionStorage.setItem('bpShortlist',JSON.stringify([...selected]));}catch(_){}
  const container=document.querySelector('#compare-table');container.replaceChildren();
- const table=document.createElement('table');const caption=document.createElement('caption');caption.textContent=dict[currentLang].compareHint;table.append(caption);
+ const table=document.createElement('table');const caption=document.createElement('caption');caption.className='visually-hidden';caption.textContent=dict[currentLang].compareTitle;table.append(caption);
  const chosen=cards.filter(c=>selected.has(c.querySelector('.compare-check').value));
  const labels=currentLang==='ru'?['Проект','Расположение','Тип','Спальни','Цена по документу','Срок сдачи']:currentLang==='az'?['Layihə','Ərazi','Növ','Yataq otaqları','Sənəddəki qiymət','Təhvil']:['Project','Location','Type','Bedrooms','Document price','Completion'];
  labels.forEach((label,i)=>{const tr=document.createElement('tr'),th=document.createElement('th');th.scope='row';th.textContent=label;tr.append(th);chosen.forEach(c=>{const td=document.createElement('td');const d=c.dataset;const words=dict[currentLang];const kind=words[{Apartment:'typeApartment',Villa:'typeVilla',Residence:'typeResidence',Retail:'typeRetail'}[d.kind]]||d.kind;const beds=d.beds==='unknown'?words.requestDetails:d.beds==='retail'?'—':d.beds.split(',').map(n=>n==='0'?words.studio:n).join(' / ');td.textContent=[d.name,d.location,kind,beds,c.querySelector('.card-price').textContent,d.date==='Please enquire'?words.confirmDate:d.date][i];tr.append(td)});table.append(tr)});container.append(table);
