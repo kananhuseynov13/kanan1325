@@ -307,6 +307,25 @@ const polishCopy = {
   ]
 };
 Object.entries(polishCopy).forEach(([key, values]) => ["en", "ru", "az"].forEach((lang, i) => dict[lang][key] = values[i]));
+const growthCopy = {
+  navAzerbaijan: ["Azerbaijan guide", "Для покупателей из Азербайджана", "Azərbaycan alıcıları üçün"],
+  searchProjects: ["Search by project name", "Поиск по названию проекта", "Layihə adı üzrə axtarış"],
+  searchHint: ["Project name", "Название проекта", "Layihənin adı"],
+  locationEyebrow: ["Browse by location", "Поиск по локации", "Ərazi üzrə axtarış"],
+  locationTitle: ["Where would you like to buy?", "Где вы хотите купить недвижимость?", "Harada əmlak almaq istəyirsiniz?"],
+  allLocations: ["All locations", "Все локации", "Bütün ərazilər"],
+  locationDubai: ["Dubai — all areas", "Дубай — все районы", "Dubay — bütün ərazilər"],
+  locationAbuDhabi: ["Abu Dhabi — all areas", "Абу-Даби — все районы", "Abu-Dabi — bütün ərazilər"]
+  ,budgetLabel: ["Budget", "Бюджет", "Büdcə"]
+  ,budgetAny: ["Not specified", "Не указан", "Qeyd edilməyib"]
+  ,timeframeLabel: ["Purchase timeframe", "Срок покупки", "Alış vaxtı"]
+  ,timeframeAny: ["Not specified", "Не указан", "Qeyd edilməyib"]
+  ,timeframeNow: ["Immediately", "Сразу", "Dərhal"]
+  ,timeframeQuarter: ["1–3 months", "1–3 месяца", "1–3 ay"]
+  ,timeframeHalf: ["3–6 months", "3–6 месяцев", "3–6 ay"]
+  ,timeframeLater: ["6+ months", "Через 6+ месяцев", "6 aydan sonra"]
+};
+Object.entries(growthCopy).forEach(([key, values]) => ["en", "ru", "az"].forEach((lang, i) => dict[lang][key] = values[i]));
 let currentLang = 'en';
 function setLang(requested) {
  const lang = Object.hasOwn(dict, requested) ? requested : 'en';
@@ -330,8 +349,8 @@ function setLang(requested) {
  document.dispatchEvent(new Event('languagechange'));
 }
 document.querySelectorAll('.lang-switch button').forEach(button=>button.addEventListener('click',()=>setLang(button.dataset.lang)));
-let savedLang='en';
-try { savedLang=localStorage.getItem('bpLang') || 'en'; } catch (_) {}
+let savedLang=new URLSearchParams(location.search).get('lang') || 'az';
+try { savedLang=new URLSearchParams(location.search).get('lang') || localStorage.getItem('bpLang') || 'az'; } catch (_) {}
 setLang(savedLang);
 const menu=document.querySelector('.menu-toggle');
 const header=document.querySelector('.site-header');
@@ -347,6 +366,9 @@ function sendLead(event,project='Bridge Properties') {
  const name=form.elements.name.value.trim();
  const phone=form.elements.phone.value.trim();
  if(!name || !phone){(!name?form.elements.name:form.elements.phone).focus();return;}
- const text=['Hello Bridge Properties,','',`Project: ${project}`,`Name: ${name}`,`Phone: ${phone}`,`Interest: ${form.elements.interest.value}`,`Message: ${form.elements.message.value.trim()}`,`Preferred appointment (Dubai time): ${form.elements.appointment?.value || "Not specified"}`,`Preferred language: ${currentLang.toUpperCase()}`].join('\n');
+ const query=new URLSearchParams(location.search);
+ const source=query.get('utm_source') || (document.referrer ? new URL(document.referrer).hostname : 'Direct');
+ const greeting=currentLang==='az'?'Salam Bridge Properties, Dubayda əmlakla maraqlanıram.':currentLang==='ru'?'Здравствуйте, Bridge Properties. Меня интересует недвижимость.':'Hello Bridge Properties, I am interested in property.';
+ const text=[greeting,'',`Project: ${project}`,`Name: ${name}`,`Phone: ${phone}`,`Interest: ${form.elements.interest.value}`,`Budget: ${form.elements.budget?.value || 'Not specified'}`,`Timeframe: ${form.elements.timeframe?.value || 'Not specified'}`,`Message: ${form.elements.message.value.trim()}`,`Preferred appointment (Dubai time): ${form.elements.appointment?.value || "Not specified"}`,`Preferred language: ${currentLang.toUpperCase()}`,`Source: ${source}`].join('\n');
  window.location.assign('https://wa.me/971561422113?text='+encodeURIComponent(text));
 }

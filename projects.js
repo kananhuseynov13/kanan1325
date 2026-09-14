@@ -12,14 +12,15 @@ if(filters){
 }
 function updateCatalogue(){
  if(!filters)return;
- const q=document.querySelector('#project-search').value.toLowerCase().trim(), type=document.querySelector('#type-filter').value, bed=document.querySelector('#bed-filter').value,budget=document.querySelector('#budget-filter').value;
+ const q=document.querySelector('#project-search').value.toLowerCase().trim(), location=document.querySelector('#location-filter')?.value.toLowerCase().trim()||'', type=document.querySelector('#type-filter').value, bed=document.querySelector('#bed-filter').value,budget=document.querySelector('#budget-filter').value;
  let count=0;
- cards.forEach(card=>{const d=card.dataset,n=Number(d.price);const show=(!q||(d.name+' '+d.location).toLowerCase().includes(q))&&(!type||type===d.kind)&&(!bed||d.beds.split(',').includes(bed))&&(!budget||(budget==='unknown'?n===0:budget==='higher'?n>20000000:n>0&&n<=Number(budget)));card.hidden=!show;if(show)count++;});
+ cards.forEach(card=>{const d=card.dataset,n=Number(d.price);const show=(!q||(d.name+' '+d.location).toLowerCase().includes(q))&&(!location||d.location.toLowerCase().includes(location))&&(!type||type===d.kind)&&(!bed||d.beds.split(',').includes(bed))&&(!budget||(budget==='unknown'?n===0:budget==='higher'?n>20000000:n>0&&n<=Number(budget)));card.hidden=!show;if(show)count++;});
  document.querySelector('#project-count').textContent=({en:`${count} of ${cards.length} projects`,ru:`Проектов: ${count} из ${cards.length}`,az:`${cards.length} layihədən ${count}`} )[currentLang];
  document.querySelector('#no-projects').hidden=count>0;
  document.querySelector('#empty-projects').hidden=count>0;
 }
-if(filters){filters.addEventListener('submit',e=>e.preventDefault());filters.addEventListener('input',updateCatalogue);filters.addEventListener('reset',()=>setTimeout(updateCatalogue,0));updateCatalogue();}
+if(filters){filters.addEventListener('submit',e=>e.preventDefault());filters.addEventListener('input',updateCatalogue);filters.addEventListener('reset',()=>{const location=document.querySelector('#location-filter');if(location)location.value='';setTimeout(updateCatalogue,0)});updateCatalogue();}
+document.querySelector('#location-filter')?.addEventListener('change',()=>{updateCatalogue();document.querySelector('#projects')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
 function comparison(){
  const region=document.querySelector('#comparison');if(!region)return;region.hidden=selected.size===0;
  document.querySelector('#shortlist-bar').hidden=selected.size===0;
@@ -41,7 +42,7 @@ function clearShortlist(){
 }
 document.querySelector('#clear-comparison')?.addEventListener('click',clearShortlist);
 document.querySelector('#clear-shortlist')?.addEventListener('click',clearShortlist);
-document.querySelector('#show-all-projects')?.addEventListener('click',()=>{filters.reset();document.querySelector('#project-search').focus();});
+document.querySelector('#show-all-projects')?.addEventListener('click',()=>{filters.reset();const location=document.querySelector('#location-filter');if(location)location.value='';document.querySelector('#project-search').focus();});
 let viewer;
 document.querySelectorAll('[data-gallery]').forEach(link=>link.addEventListener('click',event=>{
  if(typeof HTMLDialogElement==='undefined'||!HTMLDialogElement.prototype.showModal)return;event.preventDefault();
