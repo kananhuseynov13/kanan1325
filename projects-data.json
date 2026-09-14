@@ -1,7 +1,7 @@
 [
   {
     "slug": "sobha-estates-v107",
-    "name": "Sobha Estates · Villa SE-V107",
+    "name": "Sobha Estates",
     "location": "Sobha Hartland II, Dubai",
     "kind": "Villa",
     "beds": "6",
@@ -144,6 +144,11 @@
     "source": "PHOTO-2026-09-11-13-32-06.jpg · undated price sheet",
     "gallery": [
       {
+        "src": "assets/archive-exterior.webp",
+        "label": "The Archive by Imtiaz exterior rendering",
+        "source": "https://imtiaz.ae/"
+      },
+      {
         "src": "assets/archive-sheet.webp",
         "label": "Original unit price sheet",
         "page": 1
@@ -265,7 +270,7 @@
   },
   {
     "slug": "riverside-retail-r207",
-    "name": "360 Riverside Crescent · Retail R207",
+    "name": "360 Riverside Crescent",
     "location": "Sobha Hartland II, Dubai",
     "kind": "Retail",
     "beds": "retail",
@@ -282,14 +287,14 @@
     "source": "Retail Sobha Hartland 2 R207.pdf · quotation SH-1250922, p.6",
     "gallery": [
       {
-        "src": "assets/retail-exterior.webp",
-        "label": "360 Riverside Crescent project overview",
-        "page": 4
-      },
-      {
         "src": "assets/retail-view.webp",
         "label": "Project rendering",
         "page": 5
+      },
+      {
+        "src": "assets/retail-exterior.webp",
+        "label": "360 Riverside Crescent project overview",
+        "page": 4
       }
     ],
     "extra": "<p>Quoted pre-registration fees: AED 386,026 (AED 384,876 registration, AED 40 knowledge fee and AED 1,110 Oqood). VAT is excluded from the quoted price. Request the unit floor plan, permitted business activity, fit-out requirements, service charges and current availability.</p>",
@@ -297,7 +302,7 @@
   },
   {
     "slug": "davinci-tower",
-    "name": "DaVinci Tower · Interiors by Pagani",
+    "name": "DaVinci Tower",
     "location": "Business Bay, Dubai",
     "kind": "Apartment",
     "beds": "1,2,3,4",
@@ -339,7 +344,7 @@
   },
   {
     "slug": "davinci-201b",
-    "name": "DaVinci · Apartment DVT-2-201 B",
+    "name": "DaVinci Tower",
     "location": "Business Bay, Dubai",
     "kind": "Apartment",
     "beds": "2",
