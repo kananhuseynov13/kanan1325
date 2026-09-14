@@ -21,7 +21,7 @@ body{background:var(--surface);color:var(--ink)}
 .hero-visual strong{display:block;font:400 30px/1.25 Georgia,serif;margin:4px 0}
 .hero-visual span{font-size:13px;color:#e5e9e9;line-height:1.6}
 .hero-visual .photo-link{float:right;border:1px solid #ffffff80;border-radius:50%;width:40px;height:40px;display:grid;place-items:center;font-size:22px}
-.stats{background:#fff;color:var(--ink);padding:0 5vw;border-bottom:1px solid var(--border)}
+.stats.section-pad{background:#fff;color:var(--ink);padding:0 5vw;border-bottom:1px solid var(--border)}
 .stats div{background:transparent;padding:23px 18px;border-right:1px solid var(--border)}
 .stats div:last-child{border:0}.stats div::before{display:none}
 .stats strong{font:600 15px/1.4 var(--font-body);color:var(--ink)}
