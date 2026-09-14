@@ -1,0 +1,7 @@
+{
+  "name": "bridge-properties-website",
+  "private": true,
+  "scripts": { "test": "node tests/modern.test.cjs" },
+  "devDependencies": { "jsdom": "30.0.1" },
+  "engines": { "node": ">=22" }
+}
