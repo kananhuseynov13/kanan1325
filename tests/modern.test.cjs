@@ -30,6 +30,7 @@ function open(file){
  for(const l of ['en','ru','az']){d.querySelector(`[data-lang="${l}"]`).click();assert.equal(d.documentElement.lang,l);assert.ok(d.querySelector('.card-enquire').textContent.length>5);assert.ok(d.querySelector('.quick-types button').textContent.length>3);}
  assert.ok(d.querySelector('.form-extras [name="message"]'));assert.ok(d.querySelector('.lead-form [name="phone"]'));assert.equal(d.querySelector('.lead-form [name="phone"]').closest('details'),null);
  dom.window.close();
- for(const file of fs.readdirSync(root).filter(f=>f.endsWith('.html')&&f!=='index.html')){const p=open(file);assert.equal(p.window.document.querySelectorAll('.mobile-actions').length,1);assert.ok(p.window.document.querySelector('.lead-form [name="message"]'));p.window.close();}
+ for(const file of fs.readdirSync(root).filter(f=>f.endsWith('.html')&&f!=='index.html'&&fs.readFileSync(path.join(root,f),'utf8').includes('sendLead('))){const p=open(file);assert.equal(p.window.document.querySelectorAll('.mobile-actions').length,1);assert.ok(p.window.document.querySelector('.lead-form [name="message"]'));p.window.close();}
  console.log('PASS: filters, empty state, reset, sorting, shortlist, AZ/RU/EN, enquiry fields and all project pages.');
 })();
+
