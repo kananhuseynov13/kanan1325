@@ -359,8 +359,9 @@ menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')
 document.querySelectorAll('.nav a').forEach(link=>link.addEventListener('click',closeMenu));
 document.addEventListener('keydown',event=>{if(event.key==='Escape' && menu.getAttribute('aria-expanded')==='true'){closeMenu();menu.focus();}});
 document.addEventListener('click',event=>{if(!header.contains(event.target))closeMenu();});
-function sendLead(event,project='Bridge Properties') {
+function sendLead(event, project='Bridge Properties') {
  event.preventDefault();
+ if (window.BridgeLeads?.enabled) return window.BridgeLeads.submit(event.currentTarget, project);
  const form=event.currentTarget;
  if(!form.reportValidity()) return;
  const name=form.elements.name.value.trim();

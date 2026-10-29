@@ -2,6 +2,7 @@
 document.querySelector('#az-lead-form')?.addEventListener('submit', event => {
   event.preventDefault();
   const form = event.currentTarget;
+  if(window.BridgeLeads?.enabled) return window.BridgeLeads.submit(form,'Azerbaijan property enquiry');
   if (!form.reportValidity()) return;
   const params = new URLSearchParams(location.search);
   const source = params.get('utm_source') || (document.referrer ? new URL(document.referrer).hostname : 'Direct');
@@ -17,3 +18,4 @@ document.querySelector('#az-lead-form')?.addEventListener('submit', event => {
   ];
   location.assign('https://wa.me/971561422113?text=' + encodeURIComponent(lines.join('\n')));
 });
+
